@@ -1,0 +1,1 @@
+let anEs6Variable = "hello!";

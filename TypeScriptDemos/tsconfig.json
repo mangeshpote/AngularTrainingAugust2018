@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "watch": true,
+        "target": "es5",
+        "noImplicitAny": true
+    },
+//Files to which these compiler options will be applicable
+    "files": [
+        "./ConvertToEs5.ts"
+    ],
+
+    "include": [
+        
+    ],
+    //mention the file names needs to be excluded while compilation
+    "exclude": [
+        
+    ]
+}
