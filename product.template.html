@@ -1,0 +1,19 @@
+
+Is Styled? <input type="checkbox" name="" id="" [(ngModel)]="isStyled">
+
+<div [ngClass]="{'productStyle':isStyled,'backGroundStyle':true}">
+    <!-- <div [ngClass]="isStyled ? 'productStyle' : 'backGroundStyle'"> -->
+<!-- <div [ngClass]="classToBeApplied"> -->
+    <h1>{{productDetails.name | lowercase | uppercase}}</h1>
+    <img [src] = "productDetails.imageURL"/>
+
+    Is Free ? <input type="checkbox" name="" id="" [(ngModel)]="isFree">
+        <p *ngIf="!isFree"><b>Price : </b>{{productDetails.price | currency:'INR':true}}</p>
+    
+    <p><b>Rating : </b>{{productDetails.rating | number:'1.1-2'}}</p>
+    <p><b>Qunatity : </b>{{productDetails.quantity}}</p>
+    <p><b>Raw Data : </b>{{productDetails | json}}</p>
+    <p><b>TestObject : </b>{{testObj?.name}}</p>
+    
+    <hr>
+</div>

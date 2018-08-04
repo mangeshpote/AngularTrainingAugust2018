@@ -1,0 +1,21 @@
+<h1>{{heading}}</h1>
+
+<input type="text"
+[(ngModel)]="heading">
+
+<div>
+    Enter Company name: <input type="text" name="" id="" 
+    [(ngModel)]="companyName">
+    
+    <ul [ngSwitch]="companyName">
+        <li *ngSwitchCase="'IBM'">IBM</li>
+        <li *ngSwitchCase="'ANZ'">ANZ</li>
+        <li *ngSwitchCase="'CSC'">CSC</li>
+        <li *ngSwitchCase="'TCS'">TCS</li>
+        <li *ngSwitchDefault>No Company with this name..</li>
+    </ul>
+</div>
+
+
+<product *ngFor="let p of productsArray" [prodDetails] = "p"></product>
+<product></product>
