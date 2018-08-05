@@ -25,12 +25,6 @@ var ShoppingCartComponent = (function () {
             },
         ];
     }
-    ShoppingCartComponent.prototype.ChangeHeading = function () {
-        this.heading = "Flipkart";
-    };
-    ShoppingCartComponent.prototype.ChangeHeadingOnChange = function (evt) {
-        this.heading = evt.target.value;
-    };
     return ShoppingCartComponent;
 }());
 ShoppingCartComponent = __decorate([

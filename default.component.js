@@ -7,16 +7,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var DefaultComponent = (function () {
+    function DefaultComponent() {
     }
-    return AppComponent;
+    return DefaultComponent;
 }());
-AppComponent = __decorate([
+DefaultComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "\n  \n  <b>Links :</b>\n  <a routerLink=\"/posts\">Posts</a>   <!--We have used routerLink instaedof href here. This is not to refresh the page on link click-->\n  <a routerLink=\"/cart\">ShoppingCart</a>\n\n  <router-outlet></router-outlet>\n\n  "
+        selector: 'default',
+        template: "<h1>Nothing to load. Please enter correct path..</h1>"
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], DefaultComponent);
+exports.DefaultComponent = DefaultComponent;
+//# sourceMappingURL=default.component.js.map

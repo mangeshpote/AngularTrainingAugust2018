@@ -1,0 +1,13 @@
+<h1>New Course</h1>
+
+<p>
+<label>New Course : </label>
+<input type="text" name="" id="" value="Enter new course" [(ngModel)] = "courseToBeAdded">
+<input type="button" value="Add Course" (click)="AddNewCourse()">
+</p>
+    
+
+<input class="btn btn-primary" type="button" (click)="showAllCourses()" value="Show All Courses">
+<ul>
+    <li *ngFor="let c of courses">{{c}}</li>
+</ul>

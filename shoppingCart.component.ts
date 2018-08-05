@@ -13,14 +13,6 @@ export class ShoppingCartComponent{
 
     heading:string = "Shopping Cart!";
 
-    ChangeHeading(){
-        this.heading = "Flipkart";
-    }
-
-    ChangeHeadingOnChange(evt:any){
-        this.heading = evt.target.value;
-    }
-
     productsArray:Product[] = [
         {name:"Laptop",
         price:35000,
